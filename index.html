@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CClub - база компьютерных клубов и онлайн-бронирование</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+  <main class="page-wrap">
+    <section class="topbar">
+      <div class="container custom-container">
+        <div class="topbar-row">
+          <a class="brand" href="#top" aria-label="CClub">
+            <span class="brand-mark">CC</span>
+            <span class="brand-text">CClub</span>
+          </a>
+
+          <div class="top-links">
+            <a href="#clubs" class="top-link">Клубы</a>
+            <a href="#benefits" class="top-link">Преимущества</a>
+            <a href="#faq" class="top-link">FAQ</a>
+            <a href="#contacts" class="top-link">Контакты</a>
+            <a href="#" class="login-btn">Войти</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="top" class="hero-lite">
+      <div class="container custom-container">
+        <div class="hero-row">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              CClub - база компьютерных клубов
+            </h1>
+
+            <p class="hero-subtitle">
+              Находи клубы, сравнивай цены и характеристики ПК, бронируй места онлайн за пару кликов.
+            </p>
+
+            <div class="store-row">
+              <button class="book-btn solid">Выбрать клуб</button>
+            </div>
+          </div>
+
+          <div class="hero-illustration">
+            <img src="assets/img/Computer-Club-Banner.jpg" alt="CClub" class="hero-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container custom-container">
+      <hr class="separator">
+    </div>
+
+    <section id="clubs" class="list-section">
+      <div class="container custom-container">
+        <h2 class="section-title">Актуальная база клубов</h2>
+        <p class="section-subtitle">
+          Цены, адреса, характеристики ПК, акции, фото и другая
+          информация о компьютерных клубах твоего города.
+        </p>
+
+    
+
+        <div class="cards-grid">
+          <article class="club-card">
+            <div class="club-cover ">
+                 <img src="assets/img/1-club.jpg" alt="Cyber Park Arena" class="club-img">
+            </div>
+            <div class="club-body">
+              <h3>Cyber Park Arena</h3>
+              <p class="rating">★ ★ ★ ★ ★ <span>5</span></p>
+              <p class="meta"><i class="fa-solid fa-train-subway"></i> Площадь Тукая</p>
+              <p class="meta"><i class="fa-solid fa-location-dot"></i> Спартаковская улица, 2</p>
+              <div class="card-bottom">
+                <p class="price">от 130 ₽/час</p>
+                <button class="book-btn">Забронировать</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="club-card">
+            <div class="club-cover">
+                <img src="assets/img/2-club.png" alt="SBGame" class="club-img">
+            </div>
+            <div class="club-body">
+              <h3>SBGame</h3>
+              <p class="rating">★ ★ ★ ★ ★ <span>5</span></p>
+              <p class="meta"><i class="fa-solid fa-train-subway"></i> Савёловская</p>
+              <p class="meta"><i class="fa-solid fa-location-dot"></i> улица Сущёвский Вал, 3/5А</p>
+              <div class="card-bottom">
+                <p class="price">от 130 ₽/час</p>
+                <button class="book-btn">Забронировать</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="simple-section section-alt">
+      <div class="container custom-container">
+        <h2 class="block-title">Преимущества сервиса</h2>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3><i class="fa-solid fa-bolt"></i> Быстро</h3>
+            <p>Оформление в несколько шагов прямо с телефона.</p>
+          </article>
+          <article class="info-card">
+            <h3><i class="fa-solid fa-display"></i> Удобно</h3>
+            <p>Видны свободные места, цены и особенности клуба.</p>
+          </article>
+          <article class="info-card">
+            <h3><i class="fa-solid fa-shield"></i> Надёжно</h3>
+            <p>Единый понятный сценарий без переписок и звонков.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="simple-section section-alt">
+      <div class="container custom-container">
+        <h2 class="block-title">FAQ</h2>
+        <div class="faq-wrap">
+            <details class="faq-item" open>
+                <summary>Как работает бронирование?</summary>
+                <p>
+                    1) Выбери клуб по локации и условиям.<br>
+                    2) Выбери место и удобное время.<br>
+                    3) Подтверди бронь и приходи в клуб.
+                </p>
+            </details>
+          <details class="faq-item">
+            <summary>Можно ли выбрать конкретный компьютер?</summary>
+            <p>Да, при бронировании можно выбрать конкретное место/ПК в доступной зоне.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Нужно ли звонить администратору?</summary>
+            <p>Нет, бронь оформляется онлайн. Звонок нужен только в редких нестандартных случаях.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contacts" class="footer-block">
+      <div class="container custom-container">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-title">CClub</p>
+            <p class="footer-text">База компьютерных клубов</p>
+          </div>
+          <div>
+            <p class="footer-title">Контакты</p>
+            <p class="footer-text">+7 (900) 000-00-00</p>
+            <p class="footer-text">info@CClub.ru</p>
+          </div>
+          <div>
+            <p class="footer-title">Соцсети</p>
+            <p class="footer-text">
+              <i class="fa-solid"></i> Max
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
