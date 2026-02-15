@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CClub — Контакты и отзывы</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+    <main class="page-wrap">
+        <!-- Header -->
+        <section class="topbar">
+            <div class="container custom-container">
+                <div class="topbar-row">
+                    <a class="brand" href="index.html" aria-label="CClub">
+                        <span class="brand-mark">CC</span>
+                        <span class="brand-text">CClub</span>
+                    </a>
+
+                    <div class="top-links">
+                        <a href="index.html" class="top-link">Главная</a>
+                        <a href="contacts.html" class="top-link active-link">Контакты / Отзывы</a>
+                        <a href="faq.html" class="top-link">FAQ</a>
+                        <a href="404.html" class="login-btn">404</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts + Form -->
+        <section class="section">
+            <div class="container custom-container">
+                <h1 class="block-title">Контакты и отзывы</h1>
+                <p class="hero-subtitle">Оставь сообщение — ответим в рабочее время.</p>
+
+                <div class="columns is-variable is-6">
+                    <div class="column is-6">
+                        <form id="feedbackForm" class="box">
+                            <div class="field">
+                                <label class="label">Имя</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Ваше имя" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="example@email.com" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Тема</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select required>
+                                            <option value="" disabled selected>Выберите тему</option>
+                                            <option>Предложение</option>
+                                            <option>Жалоба</option>
+                                            <option>Вопрос</option>
+                                            <option>Благодарность</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Сообщение</label>
+                                <div class="control">
+                                    <textarea class="textarea" rows="5" placeholder="Ваше сообщение..."
+                                        required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input type="checkbox" required>
+                                        Соглашаюсь на обработку персональных данных
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-danger" type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="column is-6">
+                        <div class="box">
+                            <h2 class="title is-4">Контакты</h2>
+                            <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 123</p>
+                            <p><i class="fas fa-phone"></i> +7 (900) 000-00-00</p>
+                            <p><i class="fas fa-envelope"></i> info@cclub.ru</p>
+                            <p><i class="fa-solid fa-comment-dots"></i> Max</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contacts" class="footer-block">
+            <div class="container custom-container">
+                <div class="footer-grid">
+                    <div>
+                        <p class="footer-title">CClub</p>
+                        <p class="footer-text">База компьютерных клубов</p>
+                    </div>
+                    <div>
+                        <p class="footer-title">Контакты</p>
+                        <p class="footer-text">+7 (900) 000-00-00</p>
+                        <p class="footer-text">info@CClub.ru</p>
+                    </div>
+                    <div>
+                        <p class="footer-title">Соцсети</p>
+                        <p class="footer-text">Max</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
