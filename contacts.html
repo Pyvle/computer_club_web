@@ -36,60 +36,84 @@
         <section class="section">
             <div class="container custom-container">
                 <h1 class="block-title">Контакты и отзывы</h1>
-                <p class="hero-subtitle">Оставь сообщение - как можно быстрее.</p>
+                <p class="hero-subtitle">Оставьте сообщение — мы ответим как можно быстрее.</p>
 
                 <div class="columns is-variable is-6">
                     <div class="column is-6">
-                        <form id="feedbackForm" class="box">
+                        <form id="feedbackForm" class="box" novalidate>
                             <div class="field">
-                                <label class="label">Имя</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="Ваше имя" required>
+                                <label class="label" for="fullname">ФИО <span class="has-text-danger">*</span></label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="text" id="fullname" placeholder="Иванов Иван Иванович">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
                                 </div>
+                                <p class="help" id="fullnameHelp">Введите минимум имя и фамилию</p>
                             </div>
 
                             <div class="field">
-                                <label class="label">Email</label>
-                                <div class="control">
-                                    <input class="input" type="email" placeholder="example@email.com" required>
+                                <label class="label" for="phone">Телефон <span class="has-text-danger">*</span></label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="tel" id="phone" placeholder="+7 (900) 000-00-00">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
                                 </div>
+                                <p class="help" id="phoneHelp">Укажите не менее 10 цифр номера телефона</p>
                             </div>
 
                             <div class="field">
-                                <label class="label">Тема</label>
+                                <label class="label" for="email">Email <span class="has-text-danger">*</span></label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="email" id="email" placeholder="example@email.com">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <p class="help" id="emailHelp">Введите корректный email адрес</p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label" for="topic">Тема <span class="has-text-danger">*</span></label>
                                 <div class="control">
                                     <div class="select is-fullwidth">
-                                        <select required>
-                                            <option value="" disabled selected>Выберите тему</option>
-                                            <option>Предложение</option>
-                                            <option>Жалоба</option>
-                                            <option>Вопрос</option>
-                                            <option>Благодарность</option>
+                                        <select id="topic">
+                                            <option value="">Выберите тему</option>
+                                            <option value="Предложение">Предложение</option>
+                                            <option value="Жалоба">Жалоба</option>
+                                            <option value="Вопрос">Вопрос</option>
+                                            <option value="Благодарность">Благодарность</option>
                                         </select>
                                     </div>
                                 </div>
+                                <p class="help" id="topicHelp">Выберите тему обращения</p>
                             </div>
 
                             <div class="field">
-                                <label class="label">Сообщение</label>
+                                <label class="label" for="message">Сообщение <span class="has-text-danger">*</span></label>
                                 <div class="control">
-                                    <textarea class="textarea" rows="5" placeholder="Ваше сообщение..."
-                                        required></textarea>
+                                    <textarea class="textarea" id="message" rows="5" placeholder="Ваше сообщение..."></textarea>
                                 </div>
+                                <p class="help" id="messageHelp">От 10 до 500 символов</p>
                             </div>
 
                             <div class="field">
                                 <div class="control">
-                                    <label class="checkbox">
-                                        <input type="checkbox" required>
+                                    <label class="checkbox" id="agreementWrapper">
+                                        <input type="checkbox" id="agreement">
                                         Соглашаюсь на обработку персональных данных
                                     </label>
                                 </div>
+                                <p class="help" id="agreementHelp">Подтвердите согласие перед отправкой формы</p>
                             </div>
 
-                            <div class="field">
+                            <div class="field is-grouped">
                                 <div class="control">
                                     <button class="button is-danger" type="submit">Отправить</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button is-light" type="reset">Очистить</button>
                                 </div>
                             </div>
                         </form>
@@ -129,6 +153,9 @@
             </div>
         </footer>
     </main>
+
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/consoleLogger.js"></script>
 </body>
 
 </html>
